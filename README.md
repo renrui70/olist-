@@ -18,9 +18,19 @@ https://www.kaggle.com/olistbr/brazilian-ecommerce?select=olist_customers_datase
 
 
 项目1：sql+powerbi
-项目2：python+sql+tableau
+（1）利用sql语句进行数据预处理：缺失值处理、重复值处理、日期类的数据类型转换。
+（2）利用sql语句进行数据分析和powerbi进行可视化图表分析：AU（活跃用户）、GMV（交易总额）、APRU（户对企业的收入贡献水平）、RFM模型构建。
 
-对比powerbi和tableau有感：
+项目2：python+sql+tableau
+（1）利用python进行数据预处理：缺失值处理、异常值处理、重复值处理、日期类的数据类型转换。
+（2）将处理好的数据导入mysql中，再将MySQL与tableau进行连接。
+（2）利用tableau进行可视化图表分析：人货场分析。
+
+在上传的文件中包括了详细的代码和每一步代码对应的结果截图，并附有详细的文字分析以及我个人的理解。
+
+需要的软件：mysql8.0、navicat15、python3.8、jupyter notebook、powerbi desktop2025、tableau2019(2020版本以上的可能会出现图表无法可视化的现象，最好还是用2019版的稳定一些)
+
+最后对比powerbi和tableau有感：
 同样的数据表在绘图的时候，感觉在tableau中更加方便一些。
 1.在更改横纵坐标的时候，tableau会更加方便一些，双击选中即可更改，powerbi则需要在右侧设置视觉对象格式-视觉对象-x轴-标题，一层层打开才能进行更改。
 2.不同深浅颜色的更改上，tableau只需要拖拽凸显颜色深浅的字段值到标记-颜色即可，powerbi则需要在右侧设置视觉对象格式-视觉对象-数据标签-值-颜色旁边的fx中设置格式样式为渐变，再选择哪个字段，以及具体的最深的颜色和最浅的颜色。如果采用系统默认的最深、最浅的颜色效果不是很明显，还是需要自行选择颜色的，而tableau则采用系统默认的颜色即可。
